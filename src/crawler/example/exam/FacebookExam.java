@@ -25,7 +25,7 @@ public class FacebookExam {
 
 		String uri = 
 				"https://graph.facebook.com/v2.6"
-				+ "/judgead/posts?fields=id,link,message,created_time,likes.limit(0).summary(total_count),reactions.limit(0).summary(total_count)"
+				+ "/Disney/posts?fields=id,link,message,created_time,likes.limit(0).summary(total_count),reactions.limit(0).summary(total_count)"
 				+ "&access_token=EAACEdEose0cBABONXxZARvNsTGkGlMxOlfiPnfR1iBLZBUFcFvVDa7OGuhvrTuxIfZCuBZAeZBusURaLX1kuGc1SZBAZB3uJxWJdom21RlhQQp0FTKviXnoMKiqcNyrQlZCAGbRABZBoWclDamAvbCSZBWJnQZBXqQCazs13e8wMtlBJddEsxWq5ElOAsl8kcGefrDetn5ZBZCAV4oQZDZD";
 
 
