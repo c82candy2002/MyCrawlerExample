@@ -25,8 +25,8 @@ public class PttExample {
 		System.out.println(
 				CrawlerPack.start()
 				
-				// 參數設定
-			    //.addCookie("over18","1")	// 設定cookie
+				// 參數設定推) contains
+			    .addCookie("over18","1")	// 設定cookie
 				//.setRemoteEncoding("big5")// 設定遠端資料文件編碼
 				
 				// 選擇資料格式 (三選一)
@@ -35,8 +35,8 @@ public class PttExample {
 			    //.getFromXml(uri)
 			    
 			    // 這兒開始是 Jsoup Document 物件操作
-			    .select("#main-content > div:nth-child(3) > span.article-meta-value")
-			    
+			    .select("span.hl.push-tag:contains(推)")
+
 		);
 	}
 }
