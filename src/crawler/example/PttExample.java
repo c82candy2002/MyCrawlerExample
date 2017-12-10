@@ -20,7 +20,7 @@ public class PttExample {
 		CrawlerPack.setLoggerLevel(SimpleLog.LOG_LEVEL_OFF);
 
 		// 遠端資料路徑
-		String uri = "https://www.ptt.cc/bbs/Boy-Girl/M.1512833553.A.04E.html";
+		String uri = "https://www.ptt.cc/bbs/Boy-Girl/M.1512711503.A.BA4.html";
 
 		System.out.println(
 				CrawlerPack.start()
