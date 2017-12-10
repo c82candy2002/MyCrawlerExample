@@ -16,7 +16,7 @@ public class FBElasticImport {
     static String elasticIndexType = "data";
     static String pageName = "Disney";
     // 2017-09-02
-    static long start = 1512864000;
+    static long start = 1512086400;
     // 往前抓抓取日期數
     static int days = 10;
     // 每日抓取文章上限 (上限1000)
