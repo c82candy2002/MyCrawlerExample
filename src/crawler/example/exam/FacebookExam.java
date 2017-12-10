@@ -25,7 +25,7 @@ public class FacebookExam {
 
 		String uri = 
 				"https://graph.facebook.com/v2.6"
-				+ "/Disney/posts?fields=id,link,message,created_time,likes.limit(0).summary(total_count),reactions.limit(0).summary(total_count)"
+				+ "/Disney/posts?fields=id,link,message,created_time,reactions.type(LOVE).limit(0).summary(total_count)"
 				+ "&access_token=EAACEdEose0cBABONXxZARvNsTGkGlMxOlfiPnfR1iBLZBUFcFvVDa7OGuhvrTuxIfZCuBZAeZBusURaLX1kuGc1SZBAZB3uJxWJdom21RlhQQp0FTKviXnoMKiqcNyrQlZCAGbRABZBoWclDamAvbCSZBWJnQZBXqQCazs13e8wMtlBJddEsxWq5ElOAsl8kcGefrDetn5ZBZCAV4oQZDZD";
 
 
@@ -41,7 +41,7 @@ public class FacebookExam {
 			String id = data.select("id").text();
 
 			// FIXIT
-			String reactions = data.select("reactions_love summary total_count").text();
+			String reactions = data.select("reactions summary total_count").text();
 
 
 			output += id + "," + reactions + "\n";
