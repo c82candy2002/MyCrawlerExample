@@ -20,13 +20,13 @@ public class PttExample {
 		CrawlerPack.setLoggerLevel(SimpleLog.LOG_LEVEL_OFF);
 
 		// 遠端資料路徑
-		String uri = "https://www.ptt.cc/bbs/Gossiping/M.1512874275.A.3E8.html";
+		String uri = "https://www.ptt.cc/bbs/Boy-Girl/M.1512833553.A.04E.html";
 
 		System.out.println(
 				CrawlerPack.start()
 				
 				// 參數設定
-			    .addCookie("over18","1")	// 設定cookie
+			    //.addCookie("over18","1")	// 設定cookie
 				//.setRemoteEncoding("big5")// 設定遠端資料文件編碼
 				
 				// 選擇資料格式 (三選一)
@@ -35,7 +35,7 @@ public class PttExample {
 			    //.getFromXml(uri)
 			    
 			    // 這兒開始是 Jsoup Document 物件操作
-			    //.select(".css .selector ")
+			    .select("#main-content > div:nth-child(3) > span.article-meta-value")
 			    
 		);
 	}
